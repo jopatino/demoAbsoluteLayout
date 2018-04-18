@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:demoAbsoluteLayout"
+             x:Class="demoAbsoluteLayout.MainPage">
+
+    <!--<AbsoluteLayout>
+        <Button Text="Caja 1"
+                BackgroundColor="SkyBlue"
+                AbsoluteLayout.LayoutBounds="50, 50, 200, 300">
+        </Button>
+        <Button Text="Caja 2"
+                BackgroundColor="Red"
+                AbsoluteLayout.LayoutBounds="100, 100, 200, 300">
+        </Button>
+        <Button Text="Porcentual"
+                BackgroundColor="Purple"
+                AbsoluteLayout.LayoutBounds=".5, .8, .3, .3"
+                AbsoluteLayout.LayoutFlags="All">
+        </Button>
+        <Button Text="Ancho Proporcional"
+                BackgroundColor="Orange"
+                AbsoluteLayout.LayoutBounds="150, 500, .4, 80"
+                AbsoluteLayout.LayoutFlags="WidthProportional">
+        </Button>
+        <Button Text="Alto Proporcional"
+                BackgroundColor="Gray"
+                AbsoluteLayout.LayoutBounds="300, 300, 80, .4"
+                AbsoluteLayout.LayoutFlags="HeightProportional">
+        </Button>
+        <Button Text="X Proporcional"
+                BackgroundColor="Green"
+                AbsoluteLayout.LayoutBounds=".1, 500, 80, 120"
+                AbsoluteLayout.LayoutFlags="XProportional">
+        </Button>
+        <Button Text="Y Proporcional"
+                BackgroundColor="Brown"
+                AbsoluteLayout.LayoutBounds="20, .3, 80, 80"
+                AbsoluteLayout.LayoutFlags="YProportional">
+        </Button>
+    </AbsoluteLayout>-->
+    <ScrollView>
+        <StackLayout  Margin="10, 20, 10, 10">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nombre"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry Placeholder="Ingrese su Nombre"
+                   HorizontalOptions="FillAndExpand">
+                
+            </Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Dirección"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry Placeholder="Ingrese su Dirección"
+                   HorizontalOptions="FillAndExpand">
+
+            </Entry>
+        </StackLayout>
+        <StackLayout>
+            <BoxView BackgroundColor="Orange"
+                     VerticalOptions="FillAndExpand"
+                     HeightRequest="500"
+                     HorizontalOptions="FillAndExpand">
+            </BoxView>
+            <Button Text="Buscar Foto">
+                
+            </Button>
+        </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="e-mail"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold">
+                </Label>
+                <Entry Placeholder="Ingrese su correo electrónico"
+                   HorizontalOptions="FillAndExpand">
+
+                </Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Password"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold">
+                </Label>
+                <Entry Placeholder="Password"
+                   HorizontalOptions="FillAndExpand">
+
+                </Entry>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
